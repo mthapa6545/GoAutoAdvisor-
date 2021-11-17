@@ -1,0 +1,18 @@
+/*
+Class: CS609
+Assignment: Javascript Auto Advisor
+Date: September 22, 2021
+Group Members:
+    Andrew Hoffman
+    Austin Rice
+    Manoj Thapa */
+
+.row{
+    margin: 0;
+}
+.semester-dropdown{
+  border: 1;
+}
+#fileDiv{
+  padding-bottom: 10px;
+}

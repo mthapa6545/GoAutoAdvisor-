@@ -1,0 +1,35 @@
+<!--
+Class: CS609
+Assignment: Javascript Auto Advisor
+Date: September 22, 2021
+Group Members:
+    Andrew Hoffman
+    Austin Rice
+    Manoj Thapa
+-->
+<html>
+    <head>        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="page.css">
+    </head>
+    <body>
+        <label for="file_chooser">SELECT FILE</label>
+        <input type="file" id="file_chooser" name="the_file" accept=".txt,.csv" onchange="upload(this)">
+        <label for="select_sem">Select a Starting Term</label>
+        <select name="select_sem" id="select_sem" onchange="updateSemesterDropdowns()">
+            <option value="0"></option>
+            <option value="1">Spring_2022</option>
+            <option value="2">Fall_2022</option>
+        </select>
+        <label id="gpa_label">Student GPA: 0.00</label>
+        <div class="col-12">
+            <div class="container" id="tableDiv"></div>
+        </div>  
+        <button type="button" id="save_button" onclick="exportTableToFile()">Save File</button>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+
+    <script src ="/static/script.js"></script>
+</html>
